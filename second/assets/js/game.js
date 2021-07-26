@@ -1,7 +1,10 @@
-class Game {
+import {mrsPotatoHeadQuotes} from "./quotes/mrsPotatoHead.js"
+import {mrPotatoHeadQuotes} from "./quotes/mrPotatoHead.js"
+import {getIndex} from "./utilities.js"
+export class Game {
 
   start() {
-
+    console.log("STARTED")
     document.getElementById('hello').addEventListener('click', () => {
       const index = getIndex();
       const messageContainer = document.getElementById('message');
@@ -23,6 +26,7 @@ class Game {
     });
 
     document.getElementById('swap').addEventListener('click', () => {
+      console.log("test")
       const index = getIndex();
       const image = document.getElementById('image');
       const messageContainer = document.getElementById('message');
